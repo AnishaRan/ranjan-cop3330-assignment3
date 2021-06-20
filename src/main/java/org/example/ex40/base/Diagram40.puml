@@ -1,0 +1,15 @@
+@startuml
+class Solution40 {
+    Driver
+}
+class Person {
+    + firstName: String
+    + lastName: String
+    + position: String
+    + separation_date: String
+}
+
+Solution40 <|-- Person
+
+
+@enduml

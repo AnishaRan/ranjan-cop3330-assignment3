@@ -17,7 +17,7 @@ public class Solution40 {
        //Map<String, List<Person>> data_people = new Map<>();
         // let user locate all records that match search string
             // compare search string to first and last name of everyone
-            // key can be first name
+            // key can be LAST NAME
 
 
     }
@@ -60,6 +60,12 @@ public class Solution40 {
         Set<String> name = list.get(0).keySet();
         String strName = name.toString();
 
+        generateOutput(list, map, search_string, keys, strName);
+
+
+    }
+
+    private static void generateOutput(List<Map<String, Person>> list, Map<String, Person> map, String search_string, String[] keys, String strName) {
         if(strName.contains(search_string)) {
             System.out.println("Name                | Position          | Separation Date");
             System.out.println("--------------------|-------------------|----------------");
@@ -71,8 +77,6 @@ public class Solution40 {
 
             }
         }
-
-
     }
 
 }

@@ -5,14 +5,11 @@ package org.example.ex42.base;
  */
 import org.junit.jupiter.api.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.List;
+import static org.junit.jupiter.api.Assertions.*;
 
-class FileReaderTest {
+class PersonTest {
 
     @Test
-    void loadList() {
-
+    void testToString() {
     }
 }
